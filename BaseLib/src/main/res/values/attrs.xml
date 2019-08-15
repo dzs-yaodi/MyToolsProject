@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--圆角Button-->
+    <declare-styleable name="CustomButton">
+        //字体颜色
+        <attr name="text_color" format="color"/>
+        //字体大小
+        <attr name="text_size" format="integer"/>
+        //背景色
+        <attr name="buttom_background" format="color"/>
+        //边框宽度
+        <attr name="buttom_stroke_width" format="integer"/>
+        //边框颜色
+        <attr name="btn_stroke_color" format="color"/>
+        //点击的背景色
+        <attr name="backColorPress" format="color" />
+        //点击字体颜色
+        <attr name="color_click" format="color"/>
+        //圆角半径
+        <attr name="radius" format="float"/>
+        //padding
+        <attr name="text_padding" format="integer"/>
+        <attr name="text_padding_left" format="integer"/>
+        <attr name="text_padding_top" format="integer"/>
+        <attr name="text_padding_right" format="integer"/>
+        <attr name="text_padding_bottom" format="integer"/>
+        //圆角幅度
+        <attr name="top_left_radius" format="float" /><!--圆角左上-->
+        <attr name="top_right_radius" format="float" /><!--圆角右上-->
+        <attr name="bottom_left_radius" format="float" /><!--圆角左下-->
+        <attr name="bottom_right_radius" format="float" /><!--圆角右下-->
+        //形状
+        <attr name="shape">
+            <enum name="rectangle" value="0" /><!--矩形（圆角矩形）-->
+            <enum name="oval" value="1" /><!--椭圆，圆-->
+            <enum name="line" value="2" /><!--线-->
+            <enum name="ring" value="3" /><!--圆环-->
+        </attr>
+    </declare-styleable>
+
+    <!--圆角textView-->
+    <declare-styleable name="CustomTextView">
+
+        <attr name="txt_color" format="color"/>
+        <attr name="txt_size" format="integer"/>
+        <attr name="txt_background" format="color"/>
+        //边框宽度
+        <attr name="txt_stroke_width" format="integer"/>
+        //边框颜色
+        <attr name="txt_stroke_color" format="color"/>
+
+        //圆角半径
+        <attr name="txt_radius" format="float"/>
+        //padding
+        <attr name="txt_padding" format="integer"/>
+        <attr name="txt_padding_left" format="integer"/>
+        <attr name="txt_padding_top" format="integer"/>
+        <attr name="txt_padding_right" format="integer"/>
+        <attr name="txt_padding_bottom" format="integer"/>
+        //圆角幅度
+        <attr name="txt_top_left_radius" format="float" /><!--圆角左上-->
+        <attr name="txt_top_right_radius" format="float" /><!--圆角右上-->
+        <attr name="txt_bottom_left_radius" format="float" /><!--圆角左下-->
+        <attr name="txt_bottom_right_radius" format="float" /><!--圆角右下-->
+
+        //形状
+        <attr name="txt_shape">
+            <enum name="rectangle" value="0" /><!--矩形（圆角矩形）-->
+            <enum name="oval" value="1" /><!--椭圆，圆-->
+            <enum name="line" value="2" /><!--线-->
+            <enum name="ring" value="3" /><!--圆环-->
+        </attr>
+    </declare-styleable>
+</resources>

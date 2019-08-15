@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:xw="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.xw.baselib.view.CustomTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerInParent="true"
+        android:text="HELLO WORLD"
+        xw:txt_size="20"
+        xw:txt_color="#fff"
+        xw:txt_radius="20"
+        xw:txt_shape="rectangle"
+        xw:txt_padding="100"
+        xw:txt_stroke_width="5"
+        xw:txt_stroke_color="#00ff00"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <com.xw.baselib.view.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        xw:radius="20"
+        xw:text_padding="30"
+        android:text="按钮"
+        xw:buttom_background="#1BADF1"
+        />
+
+</RelativeLayout>
