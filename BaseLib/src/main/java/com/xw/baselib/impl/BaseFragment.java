@@ -14,17 +14,25 @@ import com.xw.baselib.IView;
 public abstract class BaseFragment<T extends IPresenter> extends Fragment implements IView {
 
     protected View mView;
+    protected T mPresenter;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = createView(inflater,container);
+        mPresenter = initJector();
         bindView();
         bindEvent();
         initData();
 
         return mView;
     }
+
+    /**
+     * P层绑定，若无返回null
+     * @return
+     */
+    protected abstract T initJector();
 
     /**
      * 初始化数据

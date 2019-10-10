@@ -18,16 +18,20 @@
         xw:txt_padding="100"
         xw:txt_stroke_width="5"
         xw:txt_stroke_color="#00ff00"
+        xw:txt_background="#1BADF1"
         />
 
     <com.xw.baselib.view.CustomButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        xw:radius="20"
         xw:text_padding="30"
         android:text="按钮"
         xw:buttom_background="#1BADF1"
+        xw:bottom_left_radius="60"
+        xw:top_right_radius="60"
+        xw:buttom_stroke_width="10"
+        xw:btn_stroke_color="#F81302"
         />
 
 </RelativeLayout>

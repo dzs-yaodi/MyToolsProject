@@ -24,6 +24,7 @@ public abstract class BaseLazyFragment<T extends IPresenter> extends Fragment im
     private boolean isActivityCreated;
 
     protected View mView;
+    protected T mPresenter;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public abstract class BaseLazyFragment<T extends IPresenter> extends Fragment im
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         mView = createView(inflater,container);
+        mPresenter = initJector();
         bindView();
         bindEvent();
         initData();
@@ -45,6 +47,12 @@ public abstract class BaseLazyFragment<T extends IPresenter> extends Fragment im
         return mView;
 
     }
+
+    /**
+     * P层绑定，若无返回null
+     * @return
+     */
+    protected abstract T initJector();
 
     /**
      * 初始化数据

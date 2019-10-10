@@ -1,10 +1,6 @@
 package com.xw.mytoolsproject;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import com.xw.baselib.impl.BaseActivity;
-import com.xw.baselib.impl.BaseFragment;
 import com.xw.mytoolsproject.model.MainPersenterImpl;
 import com.xw.mytoolsproject.presenter.MainPresenter;
 import com.xw.mytoolsproject.view.IMainView;
