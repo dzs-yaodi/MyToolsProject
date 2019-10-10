@@ -40,12 +40,22 @@ public abstract class BaseLazyFragment<T extends IPresenter> extends Fragment im
 
         mView = createView(inflater,container);
         mPresenter = initJector();
+        attacheView();
         bindView();
         bindEvent();
         initData();
 
         return mView;
 
+    }
+
+    /**
+     * P层绑定View层
+     */
+    private void attacheView(){
+        if (mPresenter != null){
+            mPresenter.attachView(this);
+        }
     }
 
     /**

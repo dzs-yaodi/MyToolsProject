@@ -21,6 +21,7 @@ public abstract class BaseFragment<T extends IPresenter> extends Fragment implem
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = createView(inflater,container);
         mPresenter = initJector();
+        attacheView();
         bindView();
         bindEvent();
         initData();
@@ -28,6 +29,14 @@ public abstract class BaseFragment<T extends IPresenter> extends Fragment implem
         return mView;
     }
 
+    /**
+     * P层绑定View层
+     */
+    private void attacheView(){
+        if (mPresenter != null){
+            mPresenter.attachView(this);
+        }
+    }
     /**
      * P层绑定，若无返回null
      * @return
