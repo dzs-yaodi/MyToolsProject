@@ -32,20 +32,20 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //刷新
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
     //recyclerView
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    api 'com.android.support:recyclerview-v7:28.0.0'
     //glide图片加载
-    implementation 'com.github.bumptech.glide:glide:4.6.0'
+    api 'com.github.bumptech.glide:glide:4.6.0'
     //数据请求
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.okhttp3:okhttp:3.8.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.8.0'
 
     //相关rx
-    implementation "io.reactivex.rxjava2:rxjava:2.1.0" // 必要rxjava2依赖
-    implementation "io.reactivex.rxjava2:rxandroid:2.0.1" // 必要rxandrroid依赖，切线程时需要用到
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    api "io.reactivex.rxjava2:rxjava:2.2.2" // 必要rxjava2依赖
+    api "io.reactivex.rxjava2:rxandroid:2.0.1" // 必要rxandrroid依赖，切线程时需要用到
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
 }
