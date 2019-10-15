@@ -34,4 +34,11 @@
         xw:btn_stroke_color="#F81302"
         />
 
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/ic_launcher" />
+
 </RelativeLayout>

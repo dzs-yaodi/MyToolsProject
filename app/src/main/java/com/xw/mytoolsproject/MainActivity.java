@@ -1,5 +1,8 @@
 package com.xw.mytoolsproject;
 
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 import com.xw.baselib.impl.BaseActivity;
 import com.xw.mytoolsproject.model.MainPersenterImpl;
 import com.xw.mytoolsproject.presenter.MainPresenter;
@@ -19,7 +22,9 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
 
     @Override
     protected void bindView() {
+        ImageView images = findViewById(R.id.images);
 
+        Glide.with(getContext()).load(R.mipmap.image3).into(images);
     }
 
     @Override
